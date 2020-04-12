@@ -1,0 +1,51 @@
+@font-face {
+    src: url('Minecraft.ttf');
+}
+
+.button-1{
+    -fx-font: 50px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.button-1:hover{
+    -fx-text-fill: #dedede;
+}
+
+.button-2{
+    -fx-font: 50px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.button-2:hover{
+    -fx-text-fill: #dedede;
+}
+
+.layout-1{
+    -fx-background-image: url("/backgr.gif");
+}
+
+.nadpis{
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+    -fx-font: 50px "Minecraft";
+}
+
+.score-text{
+    -fx-font: 16px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.time-text{
+    -fx-font: 16px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.gameover-text{
+    -fx-font: 50px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
