@@ -1,5 +1,5 @@
 # Pac-Hunt
-##Version 2.0
+## Version 2.0
 -----------------
 1. Added object animations
 2. Sounds
