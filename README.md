@@ -1,2 +1,7 @@
 # Pac-Hunt
-version 1.0
+version 2.0
+-----------------
+#Added object animations
+#Sounds
+#Ammo
+#Improved Timer
