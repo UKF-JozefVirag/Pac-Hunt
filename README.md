@@ -1,5 +1,5 @@
 # Pac-Hunt
-version 2.0
+Version 2.0
 -----------------
 #Added object animations
 -----------------
@@ -8,3 +8,4 @@ version 2.0
 #Ammo
 -----------------
 #Improved Timer
+-----------------
