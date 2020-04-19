@@ -13,20 +13,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1aRZGdkAEyHwR21Qx9XGRal2WZq" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PATH_TO_FX$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Vysoka/programovanie/Bombardier" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dodo\Desktop\PACHUNT\src" />
+      <recent name="C:\Users\Dodo\Desktop\PACHUNT\src\sample" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,7 +60,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
       <module name="PACHUNT" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-13.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Program Files\Java\javafx-sdk-13.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml,javafx.media" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -62,6 +78,24 @@
       <updated>1586700272421</updated>
       <workItem from="1586700277865" duration="4077000" />
       <workItem from="1586714830366" duration="241000" />
+      <workItem from="1586783500817" duration="251000" />
+      <workItem from="1586857431307" duration="5550000" />
+      <workItem from="1586871054737" duration="1083000" />
+      <workItem from="1586895828806" duration="732000" />
+      <workItem from="1586946204939" duration="596000" />
+      <workItem from="1586958318371" duration="2585000" />
+      <workItem from="1586963675861" duration="693000" />
+      <workItem from="1586967909570" duration="596000" />
+      <workItem from="1586970010667" duration="1906000" />
+      <workItem from="1587026287657" duration="4489000" />
+      <workItem from="1587040585968" duration="5411000" />
+      <workItem from="1587063023218" duration="44000" />
+      <workItem from="1587065024887" duration="652000" />
+      <workItem from="1587111435208" duration="3350000" />
+      <workItem from="1587219270032" duration="48000" />
+      <workItem from="1587234417189" duration="8704000" />
+      <workItem from="1587283699456" duration="7502000" />
+      <workItem from="1587298600544" duration="75000" />
     </task>
     <servers />
   </component>

@@ -10,6 +10,7 @@
 
 .button-1:hover{
     -fx-text-fill: #dedede;
+
 }
 
 .button-2{
@@ -20,6 +21,22 @@
 
 .button-2:hover{
     -fx-text-fill: #dedede;
+}
+
+.button-3{
+    -fx-background-image: url("/mute.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: 32.0 32.0;
+}
+
+.button-4{
+    -fx-background-image: url("/unmute.png");
+    -fx-background-color: transparent;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-size: 32.0 32.0;
 }
 
 .layout-1{
@@ -46,6 +63,24 @@
 
 .gameover-text{
     -fx-font: 50px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.reload-button{
+    -fx-font: 32px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.hint-label{
+    -fx-font: 14px "Minecraft";
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.hint2-label{
+    -fx-font: 18px "Minecraft";
     -fx-background-color: transparent;
     -fx-text-fill: white;
 }

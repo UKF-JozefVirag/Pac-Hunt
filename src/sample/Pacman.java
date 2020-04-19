@@ -1,20 +1,16 @@
 package sample;
 
-import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
 import javafx.util.Duration;
 
 public class Pacman extends ImageView {
     private Image[]sprites;
-    private Image killed, pacL;
-    double x, y, maxWidth, maxHeight, rychlost;
-    int actImage = 0;
-    int stav = 0;
+    private double maxWidth, maxHeight, rychlost;
+    private int actImage = 0;
+    private int stav = 0;
 
     public Pacman(String nazovSpritu, int pocetSpritov, double w, double h, double maxw, double maxh){
         super();
@@ -22,13 +18,10 @@ public class Pacman extends ImageView {
         maxHeight=maxh;
         sprites = new Image[pocetSpritov];
         for(int i = 0; i<pocetSpritov; i++){
-            sprites[i] = new Image(nazovSpritu+".png",w,h,false,false);
+            sprites[i] = new Image(nazovSpritu+".gif",w,h,false,false);
         }
-        killed = new Image("pacdead.png", w,h,false,false);
-        pacL = new Image("pacman1.png", w,h, false, false);
 
-
-        do{
+        do{ //nahodna rychlost
             rychlost = (int)(-5+Math.random()*11);
         } while(rychlost==0);
 
@@ -37,9 +30,7 @@ public class Pacman extends ImageView {
         }
         else
             setLayoutX(1);
-            setImage(pacL);
             setLayoutY(100+(int)Math.random()*600);
-
 
         Timeline t = new Timeline(new KeyFrame(Duration.seconds(1),e->vykresli()));
         setOnMousePressed(evt->onClick());
@@ -47,23 +38,28 @@ public class Pacman extends ImageView {
         t.play();
     }
 
-    public double getStav(){ return stav; }
+    public double getStav(){ return stav; } //getter
 
-    public void nextImage(){actImage= 0;}
+    public double getRychlost(){ //getter
+        return rychlost;
+    }
 
-    private void vykresli(){
+    public void nextImage(){ //metoda na nastavenie aktuálneho obrazku
+        actImage=0;
+    }
+
+    private void vykresli(){ //metoda na vykreslenie
         nextImage();
 
         if(stav==0)setImage(sprites[actImage]);
         if(stav==1) {
-            setImage(killed);
+            actImage = 1;
         }
-        if(stav == 2) setImage(null);
-        if (stav == 3) setImage(null);
-        if (stav == 4) setImage(null);
+        if(stav == 2 || stav == 3 || stav == 4) setImage(null);
     }
 
-    private void onClick(){
+
+    private void onClick(){ //čo sa stane ak klikneme na pacmana
         stav = 2;
         stav = 4;
     }
