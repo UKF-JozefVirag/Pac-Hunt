@@ -14,6 +14,8 @@ import javafx.scene.layout.VBox;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
+
+import java.io.File;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
@@ -88,8 +90,9 @@ public class Game extends Group {
             n3.setGraphic(new ImageView(naboj));
             n4.setGraphic(new ImageView(naboj));
             n5.setGraphic(new ImageView(naboj));
-            Media musicFile = new Media("file:///C:/Users/Dodo/Desktop/PACHUNT/src/reload.wav");
-            mediaPlayer = new MediaPlayer(musicFile);
+            File file=new File("src/reload.wav");
+            Media media=new Media(file.toURI().toString());
+            mediaPlayer = new MediaPlayer(media);
             mediaPlayer.setVolume(0.6);
             mediaPlayer.play();
         });
@@ -106,8 +109,9 @@ public class Game extends Group {
                 strela=true;
             naboje = getNaboje() - 1;
             if(naboje>-1) {
-                Media musicFile = new Media("file:///C:/Users/Dodo/Desktop/PACHUNT/src/shot.wav");
-                mediaPlayer = new MediaPlayer(musicFile);
+                File file=new File("src/shot.wav");
+                Media media=new Media(file.toURI().toString());
+                mediaPlayer = new MediaPlayer(media);
                 mediaPlayer.setVolume(0.4);
                 mediaPlayer.play();
             }

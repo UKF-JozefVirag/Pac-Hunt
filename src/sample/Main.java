@@ -16,6 +16,8 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
+import java.io.File;
+
 public class Main extends Application {
     Stage window;
     Scene scene1, scene2;
@@ -26,9 +28,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Media musicFile = new Media("file:///C:/Users/Dodo/Desktop/PACHUNT/src/bgmusic.mp3");
+        File file=new File("src/bgmusic.mp3");
+        Media media=new Media(file.toURI().toString());
         //hudba
-        mediaPlayer = new MediaPlayer(musicFile);
+        mediaPlayer = new MediaPlayer(media);
         mediaPlayer.setAutoPlay(true);
         mediaPlayer.setVolume(0.35);
         mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
